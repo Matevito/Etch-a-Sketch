@@ -1,5 +1,5 @@
-const grid_len = 15;
 const container_len = 500;
+let grid_len = 15;
 
 const grid_container = document.querySelector("#container");
 
@@ -34,3 +34,10 @@ squares_to_paint.forEach((square) => {
         square.classList.add("hovered_place")
     })
 })
+
+const reset_btn = document.querySelector("#reset_grid");
+console.log(squares_to_paint)
+
+reset_btn.addEventListener("click", () => {
+   squares_to_paint.forEach((square) => square.classList.remove("hovered_place")
+    )})
