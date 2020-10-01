@@ -39,7 +39,7 @@ squares_to_paint.forEach((square) => {
 
 //reset grid button event  
 
-const reset_btn = document.querySelector("#reset_grid");
+let reset_btn = document.querySelector("#reset_grid");
 
     //retire black and orange class from squares
 reset_btn.addEventListener("click", () => {
@@ -85,6 +85,17 @@ size_btn.addEventListener("click", () => {
             console.log(square)
         })
     });
+
+    //4. abilitate reset button
+    let reset_btn = document.querySelector("#reset_grid");
+
+    //retire black and orange class from squares
+    reset_btn.addEventListener("click", () => {
+        squares_to_paint.forEach((square) => square.classList.remove("black_hover")
+    )})
+    reset_btn.addEventListener("click", () => {
+        squares_to_paint.forEach((square) => square.classList.remove("orange_hover")
+    )})
 })
 
 //todo: change hover color:
