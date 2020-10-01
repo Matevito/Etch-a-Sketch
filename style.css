@@ -12,6 +12,13 @@ body {
     width: 500px;
 }
 
-.hovered_place {
+.black_hover {
+    background-color: black;
+}
+
+.orange_hover {
     background-color: orange;
+}
+.random_hover {
+    
 }
